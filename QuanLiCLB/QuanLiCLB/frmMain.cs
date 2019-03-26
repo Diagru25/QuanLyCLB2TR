@@ -116,7 +116,8 @@ namespace QuanLiCLB
 
         private void tsmiTKThuNhap_Click(object sender, EventArgs e)
         {
-            
+            frmThongke_CLB frm = new frmThongke_CLB();
+            frm.ShowDialog();
         }
 
         private void tsmiDanhMucDangKiCLB_Click(object sender, EventArgs e)
@@ -144,6 +145,12 @@ namespace QuanLiCLB
         private void tsmiTaiKhoan_Click(object sender, EventArgs e)
         {
             frmTaiKhoan frm = new frmTaiKhoan();
+            frm.ShowDialog();
+        }
+
+        private void thốngKêTheoTừngCâuLạcBộToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmThongke_Detail frm = new frmThongke_Detail();
             frm.ShowDialog();
         }
     }

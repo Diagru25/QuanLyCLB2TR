@@ -100,3 +100,31 @@ D:\Project\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.csprojResolveAssemblyReferenc
 D:\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.frmLopHC.resources
 D:\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.csprojResolveAssemblyReference.cache
 D:\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.frmTaiKhoan.resources
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\bin\Debug\QuanLiCLB.exe.config
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.csproj.ResolveComReference.cache
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.exe
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.pdb
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\bin\Debug\QuanLiCLB.exe
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\bin\Debug\QuanLiCLB.pdb
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\bin\Debug\Dapper.dll
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\bin\Debug\EntityFramework.dll
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\bin\Debug\Dapper.xml
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\bin\Debug\EntityFramework.xml
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.csprojResolveAssemblyReference.cache
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.frmLogin.resources
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.frmHocSinh.resources
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.frmDangKiCLB.resources
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.frmLopHC.resources
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.frmMain.resources
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.frmCLB.resources
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.frmLopHoc.resources
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.frmTaiKhoan.resources
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.Properties.Resources.resources
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.csproj.GenerateResource.Cache
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.frmThongke_CLB.resources
+C:\Users\Albert Anhduy\Documents\GitHub\QuanLyCLB2TR\QuanLiCLB\QuanLiCLB\obj\Debug\QuanLiCLB.frmThongke_Detail.resources

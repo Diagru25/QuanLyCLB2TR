@@ -58,6 +58,7 @@
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSuaThongTinTK = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupedit_NV.SuspendLayout();
             this.SuspendLayout();
@@ -72,8 +73,7 @@
             this.ThongKetsmi});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(16, 5, 0, 5);
-            this.menuStrip1.Size = new System.Drawing.Size(1445, 58);
+            this.menuStrip1.Size = new System.Drawing.Size(542, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -85,33 +85,33 @@
             this.toolStripSeparator1,
             this.tsmiThoat});
             this.quanLiHêThôngToolStripMenuItem.Name = "quanLiHêThôngToolStripMenuItem";
-            this.quanLiHêThôngToolStripMenuItem.Size = new System.Drawing.Size(253, 48);
+            this.quanLiHêThôngToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
             this.quanLiHêThôngToolStripMenuItem.Text = "Quản lí hệ thống";
             // 
             // tsmiTaiKhoan
             // 
             this.tsmiTaiKhoan.Enabled = false;
             this.tsmiTaiKhoan.Name = "tsmiTaiKhoan";
-            this.tsmiTaiKhoan.Size = new System.Drawing.Size(387, 46);
+            this.tsmiTaiKhoan.Size = new System.Drawing.Size(177, 22);
             this.tsmiTaiKhoan.Text = "Quản lí tài khoản";
             this.tsmiTaiKhoan.Click += new System.EventHandler(this.tsmiTaiKhoan_Click);
             // 
             // tsmiDangXuat
             // 
             this.tsmiDangXuat.Name = "tsmiDangXuat";
-            this.tsmiDangXuat.Size = new System.Drawing.Size(387, 46);
+            this.tsmiDangXuat.Size = new System.Drawing.Size(177, 22);
             this.tsmiDangXuat.Text = "Đăng xuất";
             this.tsmiDangXuat.Click += new System.EventHandler(this.tsmiDangXuat_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(384, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(174, 6);
             // 
             // tsmiThoat
             // 
             this.tsmiThoat.Name = "tsmiThoat";
-            this.tsmiThoat.Size = new System.Drawing.Size(387, 46);
+            this.tsmiThoat.Size = new System.Drawing.Size(177, 22);
             this.tsmiThoat.Text = "Thoát chương trình";
             this.tsmiThoat.Click += new System.EventHandler(this.tsmiThoat_Click);
             // 
@@ -125,46 +125,46 @@
             this.toolStripSeparator2,
             this.tsmiDanhMucDangKi});
             this.quanLiDanhMucToolStripMenuItem.Name = "quanLiDanhMucToolStripMenuItem";
-            this.quanLiDanhMucToolStripMenuItem.Size = new System.Drawing.Size(264, 48);
+            this.quanLiDanhMucToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
             this.quanLiDanhMucToolStripMenuItem.Text = "Quản lí danh mục";
             // 
             // tsmiDanhMucHocSinh
             // 
             this.tsmiDanhMucHocSinh.Name = "tsmiDanhMucHocSinh";
-            this.tsmiDanhMucHocSinh.Size = new System.Drawing.Size(336, 46);
+            this.tsmiDanhMucHocSinh.Size = new System.Drawing.Size(157, 22);
             this.tsmiDanhMucHocSinh.Text = "Học sinh";
             this.tsmiDanhMucHocSinh.Click += new System.EventHandler(this.tsmiDanhMucHocSinh_Click);
             // 
             // tsmiDanhMucLopHoc
             // 
             this.tsmiDanhMucLopHoc.Name = "tsmiDanhMucLopHoc";
-            this.tsmiDanhMucLopHoc.Size = new System.Drawing.Size(336, 46);
+            this.tsmiDanhMucLopHoc.Size = new System.Drawing.Size(157, 22);
             this.tsmiDanhMucLopHoc.Text = "Lớp học";
             this.tsmiDanhMucLopHoc.Click += new System.EventHandler(this.tsmiDanhMucLopHoc_Click);
             // 
             // tsmiDanhMucCLB
             // 
             this.tsmiDanhMucCLB.Name = "tsmiDanhMucCLB";
-            this.tsmiDanhMucCLB.Size = new System.Drawing.Size(336, 46);
+            this.tsmiDanhMucCLB.Size = new System.Drawing.Size(157, 22);
             this.tsmiDanhMucCLB.Text = "Câu lạc bộ";
             this.tsmiDanhMucCLB.Click += new System.EventHandler(this.tsmiDanhMucCLB_Click);
             // 
             // lớpHànhChínhToolStripMenuItem
             // 
             this.lớpHànhChínhToolStripMenuItem.Name = "lớpHànhChínhToolStripMenuItem";
-            this.lớpHànhChínhToolStripMenuItem.Size = new System.Drawing.Size(336, 46);
+            this.lớpHànhChínhToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.lớpHànhChínhToolStripMenuItem.Text = "Lớp hành chính";
             this.lớpHànhChínhToolStripMenuItem.Click += new System.EventHandler(this.lớpHànhChínhToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(333, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(154, 6);
             // 
             // tsmiDanhMucDangKi
             // 
             this.tsmiDanhMucDangKi.Name = "tsmiDanhMucDangKi";
-            this.tsmiDanhMucDangKi.Size = new System.Drawing.Size(336, 46);
+            this.tsmiDanhMucDangKi.Size = new System.Drawing.Size(157, 22);
             this.tsmiDanhMucDangKi.Text = "Đăng kí CLB";
             this.tsmiDanhMucDangKi.Click += new System.EventHandler(this.tsmiDanhMucDangKiCLB_Click);
             // 
@@ -176,44 +176,45 @@
             this.tsmiTimKiemSachDaChoMuon});
             this.timKiêmToolStripMenuItem.Enabled = false;
             this.timKiêmToolStripMenuItem.Name = "timKiêmToolStripMenuItem";
-            this.timKiêmToolStripMenuItem.Size = new System.Drawing.Size(151, 48);
+            this.timKiêmToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.timKiêmToolStripMenuItem.Text = "Tìm kiếm";
             this.timKiêmToolStripMenuItem.Visible = false;
             // 
             // tsmiTimKiemDocGia
             // 
             this.tsmiTimKiemDocGia.Name = "tsmiTimKiemDocGia";
-            this.tsmiTimKiemDocGia.Size = new System.Drawing.Size(328, 46);
+            this.tsmiTimKiemDocGia.Size = new System.Drawing.Size(154, 22);
             this.tsmiTimKiemDocGia.Text = "Tìm Học sinh";
             this.tsmiTimKiemDocGia.Click += new System.EventHandler(this.tsmiTimKiemDocGia_Click);
             // 
             // tsmiTimKiemSach
             // 
             this.tsmiTimKiemSach.Name = "tsmiTimKiemSach";
-            this.tsmiTimKiemSach.Size = new System.Drawing.Size(328, 46);
+            this.tsmiTimKiemSach.Size = new System.Drawing.Size(154, 22);
             this.tsmiTimKiemSach.Text = "Tìm Lớp";
             this.tsmiTimKiemSach.Click += new System.EventHandler(this.tsmiTimKiemSach_Click);
             // 
             // tsmiTimKiemSachDaChoMuon
             // 
             this.tsmiTimKiemSachDaChoMuon.Name = "tsmiTimKiemSachDaChoMuon";
-            this.tsmiTimKiemSachDaChoMuon.Size = new System.Drawing.Size(328, 46);
+            this.tsmiTimKiemSachDaChoMuon.Size = new System.Drawing.Size(154, 22);
             this.tsmiTimKiemSachDaChoMuon.Text = "Tìm Câu lạc bộ";
             this.tsmiTimKiemSachDaChoMuon.Click += new System.EventHandler(this.tsmiTimKiemSachDaChoMuon_Click);
             // 
             // ThongKetsmi
             // 
             this.ThongKetsmi.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiTK});
+            this.tsmiTK,
+            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem});
             this.ThongKetsmi.Name = "ThongKetsmi";
-            this.ThongKetsmi.Size = new System.Drawing.Size(155, 48);
+            this.ThongKetsmi.Size = new System.Drawing.Size(69, 20);
             this.ThongKetsmi.Text = "Thống kê";
             this.ThongKetsmi.Visible = false;
             // 
             // tsmiTK
             // 
             this.tsmiTK.Name = "tsmiTK";
-            this.tsmiTK.Size = new System.Drawing.Size(257, 46);
+            this.tsmiTK.Size = new System.Drawing.Size(152, 22);
             this.tsmiTK.Text = "Thống kê";
             this.tsmiTK.Click += new System.EventHandler(this.tsmiTKThuNhap_Click);
             // 
@@ -232,58 +233,51 @@
             this.groupedit_NV.Controls.Add(this.btnBoQua);
             this.groupedit_NV.Controls.Add(this.btnLuu);
             this.groupedit_NV.Enabled = false;
-            this.groupedit_NV.Location = new System.Drawing.Point(32, 86);
-            this.groupedit_NV.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.groupedit_NV.Location = new System.Drawing.Point(12, 36);
             this.groupedit_NV.Name = "groupedit_NV";
-            this.groupedit_NV.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.groupedit_NV.Size = new System.Drawing.Size(1384, 620);
+            this.groupedit_NV.Size = new System.Drawing.Size(519, 260);
             this.groupedit_NV.TabIndex = 8;
             this.groupedit_NV.TabStop = false;
             // 
             // txtPasswordDoctor
             // 
-            this.txtPasswordDoctor.Location = new System.Drawing.Point(371, 248);
-            this.txtPasswordDoctor.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.txtPasswordDoctor.Location = new System.Drawing.Point(139, 104);
             this.txtPasswordDoctor.Name = "txtPasswordDoctor";
-            this.txtPasswordDoctor.Size = new System.Drawing.Size(513, 38);
+            this.txtPasswordDoctor.Size = new System.Drawing.Size(195, 20);
             this.txtPasswordDoctor.TabIndex = 66;
             this.txtPasswordDoctor.UseSystemPasswordChar = true;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(53, 265);
-            this.label11.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label11.Location = new System.Drawing.Point(20, 111);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(131, 32);
+            this.label11.Size = new System.Drawing.Size(52, 13);
             this.label11.TabIndex = 65;
             this.label11.Text = "Mật khẩu";
             // 
             // txtUsernameDoctor
             // 
-            this.txtUsernameDoctor.Location = new System.Drawing.Point(371, 112);
-            this.txtUsernameDoctor.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.txtUsernameDoctor.Location = new System.Drawing.Point(139, 47);
             this.txtUsernameDoctor.Name = "txtUsernameDoctor";
             this.txtUsernameDoctor.ReadOnly = true;
-            this.txtUsernameDoctor.Size = new System.Drawing.Size(513, 38);
+            this.txtUsernameDoctor.Size = new System.Drawing.Size(195, 20);
             this.txtUsernameDoctor.TabIndex = 64;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(53, 119);
-            this.label10.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label10.Location = new System.Drawing.Point(20, 50);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(206, 32);
+            this.label10.Size = new System.Drawing.Size(81, 13);
             this.label10.TabIndex = 63;
             this.label10.Text = "Tên đăng nhập";
             // 
             // btnBoQua
             // 
-            this.btnBoQua.Location = new System.Drawing.Point(1107, 489);
-            this.btnBoQua.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnBoQua.Location = new System.Drawing.Point(415, 205);
             this.btnBoQua.Name = "btnBoQua";
-            this.btnBoQua.Size = new System.Drawing.Size(200, 55);
+            this.btnBoQua.Size = new System.Drawing.Size(75, 23);
             this.btnBoQua.TabIndex = 31;
             this.btnBoQua.Text = "Bỏ qua";
             this.btnBoQua.UseVisualStyleBackColor = true;
@@ -291,10 +285,9 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(819, 489);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnLuu.Location = new System.Drawing.Point(307, 205);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(200, 55);
+            this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 30;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -302,10 +295,9 @@
             // 
             // btnSuaThongTinTK
             // 
-            this.btnSuaThongTinTK.Location = new System.Drawing.Point(677, 720);
-            this.btnSuaThongTinTK.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnSuaThongTinTK.Location = new System.Drawing.Point(254, 302);
             this.btnSuaThongTinTK.Name = "btnSuaThongTinTK";
-            this.btnSuaThongTinTK.Size = new System.Drawing.Size(373, 55);
+            this.btnSuaThongTinTK.Size = new System.Drawing.Size(140, 23);
             this.btnSuaThongTinTK.TabIndex = 29;
             this.btnSuaThongTinTK.Text = "Sửa thông tin tài khoản";
             this.btnSuaThongTinTK.UseVisualStyleBackColor = true;
@@ -313,26 +305,31 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(1139, 720);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnThoat.Location = new System.Drawing.Point(427, 302);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(200, 55);
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 31;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
+            // thốngKêTheoTừngCâuLạcBộToolStripMenuItem
+            // 
+            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Name = "thốngKêTheoTừngCâuLạcBộToolStripMenuItem";
+            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Text = "Thống kê theo từng câu lạc bộ";
+            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Click += new System.EventHandler(this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem_Click);
+            // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1445, 804);
+            this.ClientSize = new System.Drawing.Size(542, 337);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnSuaThongTinTK);
             this.Controls.Add(this.groupedit_NV);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lí Câu lạc bộ";
@@ -377,6 +374,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem tsmiDanhMucDangKi;
         private System.Windows.Forms.ToolStripMenuItem lớpHànhChínhToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thốngKêTheoTừngCâuLạcBộToolStripMenuItem;
     }
 }
 

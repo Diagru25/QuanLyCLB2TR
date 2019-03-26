@@ -140,6 +140,18 @@
     <Compile Include="frmTaiKhoan.Designer.cs">
       <DependentUpon>frmTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThongke_CLB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongke_CLB.Designer.cs">
+      <DependentUpon>frmThongke_CLB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongke_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongke_Detail.Designer.cs">
+      <DependentUpon>frmThongke_Detail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Clb.cs" />
     <Compile Include="Model\DangKy.cs" />
     <Compile Include="Model\HocSinh.cs" />
@@ -172,6 +184,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTaiKhoan.resx">
       <DependentUpon>frmTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongke_CLB.resx">
+      <DependentUpon>frmThongke_CLB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongke_Detail.resx">
+      <DependentUpon>frmThongke_Detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
