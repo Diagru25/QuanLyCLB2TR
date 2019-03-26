@@ -17,21 +17,11 @@ namespace QuanLiCLB
         public frmThongke_CLB()
         {
             InitializeComponent();
-            LoadCbb();
             Thongke();
-        }
-        void LoadCbb()
-        {
-            comboBox1.DataSource = new LopHcController().Detail();
-            comboBox1.ValueMember = "ID";
-            comboBox1.DisplayMember = "Ten";
         }
         void Thongke()
         {
             listView_Patient.Clear();
-            int ID_LopHC;
-            int.TryParse(comboBox1.SelectedValue.ToString(), out ID_LopHC);
-            ID_LopHC = 1;
             //var l = (from hocsinh in db.HocSinhs
             //         join dk in db.DangKies on hocsinh.ID equals dk.HocSinhID
             //         //where hocsinh.Lophc == ID_LopHC
