@@ -182,5 +182,26 @@ namespace QuanLiCLB
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtFind.Text.Length > 0)
+            {
+                DangKiCLBController drc = new DangKiCLBController();
+                var li = drc.Find(txtFind.Text);
+                if (li.Count <= 0)
+                {
+                    MessageBox.Show("không tìm thấy");
+                    return;
+                }
+                ShowView(li);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DangKiCLBController drc = new DangKiCLBController();
+            ShowView(drc.Detail());
+        }
     }
 }

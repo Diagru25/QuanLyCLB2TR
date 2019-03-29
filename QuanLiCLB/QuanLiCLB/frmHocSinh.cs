@@ -11,12 +11,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections;
 using System.Globalization;
+using QuanLiCLB.Model.View;
 
 namespace QuanLiCLB
 {
     public partial class frmHocSinh : Form
     {
-        List<HocSinh> l = null;
+        List<HocSinhView> l = null;
         private bool Them_bool = false;
         private bool Sua_bool = false;
         public frmHocSinh()
@@ -24,7 +25,7 @@ namespace QuanLiCLB
             InitializeComponent();
             var dg = new HocSinhController();
             loadcbb();
-            ShowView(dg.Detail());
+            ShowView(dg.DetailView());
             IsAdmin(ConstantCommon.QUYEN);
         }
         void IsAdmin(string role)
@@ -42,9 +43,9 @@ namespace QuanLiCLB
         {
             cbbLopHocSinh.DataSource = new LopHcController().Detail();
             cbbLopHocSinh.ValueMember = "ID";
-            cbbLopHocSinh.DisplayMember = "TenLp";
+            cbbLopHocSinh.DisplayMember = "Ten";
         }
-        public void ShowView(List<HocSinh> ld)
+        public void ShowView(List<HocSinhView> ld)
         {
             l = ld;
             int i = 1;
@@ -62,7 +63,8 @@ namespace QuanLiCLB
                 item.SubItems.Add(row.ID.ToString());
                 item.SubItems.Add(row.TenHS);
                 item.SubItems.Add((row.GioiTinh != null && row.GioiTinh == true) ? "Nam" : "Nữ");
-                item.SubItems.Add(Convert.ToDateTime(l[0].NgaySinh).ToString("dd/MM/yyyy", CultureInfo.InvariantCulture));
+                item.SubItems.Add(Convert.ToDateTime(row.NgaySinh).ToString("dd/MM/yyyy", CultureInfo.InvariantCulture));
+                item.SubItems.Add(row.TenLopHc);
 
                 listView_HocSinh.Items.Add(item);
             }
@@ -125,7 +127,7 @@ namespace QuanLiCLB
                 long id = Convert.ToInt64(txtIDHocSinh.Text);
                 var entity = new HocSinhController();
                 if (entity.Del(id))
-                    ShowView(entity.Detail());
+                    ShowView(entity.DetailView());
                 else
                     MessageBox.Show("Lỗi");
             }
@@ -137,16 +139,14 @@ namespace QuanLiCLB
             {
                 var entity = new HocSinh();
                 entity.TenHS = txtTenHocSinh.Text;
-                entity.GioiTinh = Convert.ToBoolean(cbbGenderHocSinh.SelectedIndex);
+                entity.GioiTinh = cbbGenderHocSinh.Text == "Nam" ? true : false;
                 entity.NgaySinh = dtpDateHocSinh.Value;
                 entity.Lophc = Convert.ToInt64(cbbLopHocSinh.SelectedValue);
 
                 var dg = new HocSinhController();
                 long ijk = dg.Add(entity);
                 if (ijk > 0)
-                    ShowView(dg.Detail());
-                else if (ijk < 0)
-                    MessageBox.Show("bản ghi đã tồn tại");
+                    ShowView(dg.DetailView());
                 else
                     MessageBox.Show("Thêm bản ghi không thành công");
                 add(false);
@@ -157,12 +157,12 @@ namespace QuanLiCLB
                 var entity = new HocSinh();
                 entity.ID = Convert.ToInt32(txtIDHocSinh.Text);
                 entity.TenHS = txtTenHocSinh.Text;
-                entity.GioiTinh = Convert.ToBoolean(cbbGenderHocSinh.SelectedIndex);
+                entity.GioiTinh = cbbGenderHocSinh.Text == "Nam" ? true : false;
                 entity.NgaySinh = dtpDateHocSinh.Value;
                 entity.Lophc = Convert.ToInt64(cbbLopHocSinh.SelectedValue);
                 var dg = new HocSinhController();
                 if (dg.Edit(entity))
-                    ShowView(dg.Detail());
+                    ShowView(dg.DetailView());
                 else
                     MessageBox.Show("Sửa bản ghi không thành công");
             }
@@ -184,12 +184,13 @@ namespace QuanLiCLB
             if (txtFind.Text.Length > 0)
             {
                 HocSinhController drc = new HocSinhController();
-                var li = drc.FindByName(txtFind.Text);
+                var li = drc.FindByNameView(txtFind.Text);
                 if (li.Count <= 0)
                 {
                     MessageBox.Show("Không tìm thấy.");
                     return;
                 }
+
                 ShowView(li);
             }
         }
@@ -197,7 +198,7 @@ namespace QuanLiCLB
         private void button2_Click(object sender, EventArgs e)
         {
             HocSinhController dtc = new HocSinhController();
-            ShowView(dtc.Detail());
+            ShowView(dtc.DetailView());
         }
     }
 }

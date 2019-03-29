@@ -123,7 +123,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1084, 136);
             this.groupBox1.TabIndex = 48;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tìm kiếm theo tên";
+            this.groupBox1.Text = "Tìm kiếm";
             // 
             // button2
             // 
@@ -134,6 +134,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Làm mới";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtFind
             // 
@@ -152,6 +153,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Tìm";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox2
             // 
@@ -257,6 +259,7 @@
             // 
             // cboLop
             // 
+            this.cboLop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLop.FormattingEnabled = true;
             this.cboLop.Location = new System.Drawing.Point(384, 438);
             this.cboLop.Name = "cboLop";
@@ -265,6 +268,7 @@
             // 
             // cboHS
             // 
+            this.cboHS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboHS.FormattingEnabled = true;
             this.cboHS.Location = new System.Drawing.Point(384, 326);
             this.cboHS.Name = "cboHS";

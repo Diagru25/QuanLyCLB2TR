@@ -158,6 +158,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Làm mới";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtFind
             // 
@@ -176,6 +177,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Tìm";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox3
             // 

@@ -72,5 +72,11 @@ namespace QuanLiCLB.controller
                 return false;
             }
         }
+        public List<DangKy> Find(string key)
+        {
+            return db.DangKies.Where(x => x.HocPhi.ToString().Contains(key) 
+            || x.NgayDky.ToString().Contains(key) 
+            || x.NguoiDangKy.Contains(key)).ToList();
+        }
     }
 }

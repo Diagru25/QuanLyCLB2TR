@@ -89,6 +89,7 @@ namespace QuanLiCLB
             btn_edit(true);
             txbID.Text = "";
             txbUserName.Text = "";
+            pnlCreatPass.Visible = true;
 
             this.Add_bool = true;
             txbUserName.Enabled = true;
@@ -123,13 +124,13 @@ namespace QuanLiCLB
 
                 entity.TenTK = txbUserName.Text;
                 entity.Quyen = string.IsNullOrEmpty(cboQuyen.Text) ? "User" : cboQuyen.Text;
-                entity.MatKhau = "1";
+                entity.MatKhau = txbMatKhau.Text;
                 var clb = new TKController();
                 long t = clb.Add(entity);
                 if (t > 0)
                 {
                     ShowView(clb.Detail());
-                    MessageBox.Show("Bạn đã tạo 1 tài khoản mới, mật khẩu mặc định là \"1\"");
+                    MessageBox.Show("Tạo tài khoản mới thành công");
                 }     
                 else
                     MessageBox.Show("Thêm bản ghi không thành công" );
@@ -146,16 +147,53 @@ namespace QuanLiCLB
                     MessageBox.Show("Sửa bản ghi không thành công");
             }
             btn_edit(false);
+            pnlCreatPass.Visible = false;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             btn_edit(false);
+            pnlCreatPass.Visible = false;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtFind.Text.Length > 0)
+            {
+                TKController drc = new TKController();
+                var li = drc.FindByName(txtFind.Text);
+                if (li.Count <= 0)
+                {
+                    MessageBox.Show("không tìm thấy");
+                    return;
+                }
+                ShowView(li);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TKController drc = new TKController();
+            ShowView(drc.Detail());
+        }
+
+        private void btnShowPass_Click(object sender, EventArgs e)
+        {
+            if(btnShowPass.Text == "Hiện")
+            {
+                btnShowPass.Text = "Ẩn";
+                txbMatKhau.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                btnShowPass.Text = "Hiện";
+                txbMatKhau.UseSystemPasswordChar = true;
+            }
         }
     }
 }

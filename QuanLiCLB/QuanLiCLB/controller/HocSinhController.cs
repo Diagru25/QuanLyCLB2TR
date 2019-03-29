@@ -1,4 +1,5 @@
 ﻿using QuanLiCLB.Model;
+using QuanLiCLB.Model.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,8 +17,26 @@ namespace QuanLiCLB.controller
         }
         public List<HocSinh> Detail()
         {
-            return db.HocSinhs.OrderByDescending(x=>x.ID).ToList();
+            return db.HocSinhs.OrderByDescending(x => x.ID).ToList();
+
         }
+        public List<HocSinhView> DetailView()
+        {
+            var list = (from a in db.HocSinhs
+                       join b in db.LopHCs
+                       on a.Lophc equals b.ID
+                       select new HocSinhView
+                       {
+                           ID = a.ID,
+                           GioiTinh = a.GioiTinh,
+                           TenHS = a.TenHS,
+                           NgaySinh = a.NgaySinh,
+                           Lophc = a.Lophc,
+                           TenLopHc = b.Ten
+                       }).OrderByDescending(x=>x.ID);
+            return list.ToList();
+        }
+
         public HocSinh DetailOne(long ID)
         {
             var dr = db.HocSinhs.Find(ID);
@@ -27,24 +46,16 @@ namespace QuanLiCLB.controller
         {
             try
             {
-                var index = db.HocSinhs.Where(m => m.TenHS == entity.TenHS).ToList();
-                if (index.Count>0)
-                {
-                    return -1;
-                }
-                else
-                {
-                    db.HocSinhs.Add(entity);
-                    db.SaveChanges();
-                }
-                
+                db.HocSinhs.Add(entity);
+                db.SaveChanges();
+                return entity.ID;
+
             }
             catch (Exception)
             {
                 return 0;
                 throw;
             }
-            return entity.ID;
         }
         public bool Edit(HocSinh entity)
         {
@@ -83,6 +94,23 @@ namespace QuanLiCLB.controller
         {
             var list = db.HocSinhs.Where(m => m.TenHS.Contains(key)).ToList();
             return list;
+        }
+        public List<HocSinhView> FindByNameView(string key)
+        {
+            var list = (from a in db.HocSinhs
+                       join b in db.LopHCs
+                       on a.Lophc equals b.ID
+                       select new HocSinhView
+                       {
+                           ID = a.ID,
+                           GioiTinh = a.GioiTinh,
+                           TenHS = a.TenHS,
+                           NgaySinh = a.NgaySinh,
+                           Lophc = a.Lophc,
+                           TenLopHc = b.Ten
+                       }).Where(m => m.TenHS.Contains(key));
+
+            return list.ToList();
         }
     }
 }

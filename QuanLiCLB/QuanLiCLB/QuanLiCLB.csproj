@@ -159,6 +159,7 @@
     <Compile Include="Model\LopHoc.cs" />
     <Compile Include="Model\QLCLBDbContext.cs" />
     <Compile Include="Model\TaiKhoan.cs" />
+    <Compile Include="Model\View\HocSinhView.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmLogin.resx">

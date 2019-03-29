@@ -69,7 +69,8 @@ namespace QuanLiCLB
                     item.SubItems.Add(row.ID.ToString());
                     item.SubItems.Add(row.TenLp.ToString());
                     item.SubItems.Add(row.LichHoc.ToString());
-                    item.SubItems.Add(Convert.ToDateTime(l[0].NgayBatDau).ToString("dd/MM/yyyy", CultureInfo.InvariantCulture));
+                    item.SubItems.Add(Convert.ToDateTime(row.NgayBatDau).ToString("dd/MM/yyyy", CultureInfo.InvariantCulture));
+                    item.SubItems.Add(row.CaHoc);
                     lvLopHoc.Items.Add(item);
                 }
                 btn_edit(false);
