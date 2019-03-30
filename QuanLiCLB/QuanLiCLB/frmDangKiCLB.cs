@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -82,6 +83,8 @@ namespace QuanLiCLB
                     item.SubItems.Add((new LopHocController().DetailOne((long)row.LopID)).TenLp);
                     item.SubItems.Add((new HocSinhController().DetailOne((long)row.HocSinhID)).TenHS);
                     item.SubItems.Add(((Decimal)row.HocPhi).ToString("N0"));
+                    item.SubItems.Add(row.NguoiDangKy);
+                    item.SubItems.Add(Convert.ToDateTime(row.NgayDky).ToString("dd/MM/yyyy", CultureInfo.InvariantCulture));
                     listviewDK.Items.Add(item);
                 }
             }
