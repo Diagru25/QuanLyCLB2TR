@@ -214,15 +214,15 @@
             // tsmiTK
             // 
             this.tsmiTK.Name = "tsmiTK";
-            this.tsmiTK.Size = new System.Drawing.Size(236, 22);
-            this.tsmiTK.Text = "Thống kê số học sinh theo lớp";
+            this.tsmiTK.Size = new System.Drawing.Size(297, 22);
+            this.tsmiTK.Text = "Thống kê số học sinh theo lớp hành chính";
             this.tsmiTK.Click += new System.EventHandler(this.tsmiTKThuNhap_Click);
             // 
             // thốngKêTheoTừngCâuLạcBộToolStripMenuItem
             // 
             this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Name = "thốngKêTheoTừngCâuLạcBộToolStripMenuItem";
-            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
-            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Text = "Thống kê theo từng câu lạc bộ";
+            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Size = new System.Drawing.Size(297, 22);
+            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Text = "Thống kê số học sinh tham gia câu lạc bộ";
             this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Click += new System.EventHandler(this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem_Click);
             // 
             // imageList1
