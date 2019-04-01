@@ -48,6 +48,7 @@
             this.tsmiTimKiemSachDaChoMuon = new System.Windows.Forms.ToolStripMenuItem();
             this.ThongKetsmi = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiTK = new System.Windows.Forms.ToolStripMenuItem();
+            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.groupedit_NV = new System.Windows.Forms.GroupBox();
             this.txtPasswordDoctor = new System.Windows.Forms.TextBox();
@@ -58,7 +59,6 @@
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSuaThongTinTK = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupedit_NV.SuspendLayout();
             this.SuspendLayout();
@@ -214,9 +214,16 @@
             // tsmiTK
             // 
             this.tsmiTK.Name = "tsmiTK";
-            this.tsmiTK.Size = new System.Drawing.Size(152, 22);
-            this.tsmiTK.Text = "Thống kê";
+            this.tsmiTK.Size = new System.Drawing.Size(236, 22);
+            this.tsmiTK.Text = "Thống kê số học sinh theo lớp";
             this.tsmiTK.Click += new System.EventHandler(this.tsmiTKThuNhap_Click);
+            // 
+            // thốngKêTheoTừngCâuLạcBộToolStripMenuItem
+            // 
+            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Name = "thốngKêTheoTừngCâuLạcBộToolStripMenuItem";
+            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Text = "Thống kê theo từng câu lạc bộ";
+            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Click += new System.EventHandler(this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem_Click);
             // 
             // imageList1
             // 
@@ -312,13 +319,6 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
-            // thốngKêTheoTừngCâuLạcBộToolStripMenuItem
-            // 
-            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Name = "thốngKêTheoTừngCâuLạcBộToolStripMenuItem";
-            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Text = "Thống kê theo từng câu lạc bộ";
-            this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem.Click += new System.EventHandler(this.thốngKêTheoTừngCâuLạcBộToolStripMenuItem_Click);
             // 
             // frmMain
             // 

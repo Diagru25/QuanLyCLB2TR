@@ -52,14 +52,41 @@ namespace QuanLiCLB
                          Sohocsinh = g.Count()
                      }
                 ).ToList();
+            //var r1 = (from lops in db.LopHCs
+            //          join lop in r on lops.Ten equals lop.TenLop into abc
+            //          from b in abc.DefaultIfEmpty()
+            //          select new
+            //          {
+            //              TenLop = lops.Ten,
+            //              Sohocsinh = b.Sohocsinh,
+            //          }).ToList();
+            var lophc = (from lop in db.LopHCs
+                         join hs in db.HocSinhs on lop.ID equals hs.Lophc
+                         select new
+                         {
+                             Malop = lop.ID,
+                             ID_HS = hs.ID
+                         }).Distinct().ToList();
+            var r2 = (from x in lophc
+                      group x by x.Malop into g
+                      select new
+                      {
+                          TenLop = (from lop in db.LopHCs
+                                    where lop.ID == g.Key
+                                    select lop.Ten).FirstOrDefault(),
+                          Sohocsinh = g.Count()
+                      }
+                ).ToList();
+            //var testl = (from lophc in db.LopHCs
+            //             join hs in db.HocSinhs);
             var i = 0;
             listView_Patient.Columns.Add("STT");
             listView_Patient.Columns.Add("Tên Lớp");
-            listView_Patient.Columns.Add("Số học sinh tham gia");
+            listView_Patient.Columns.Add("Số học sinh");
             listView_Patient.Columns[0].Width = 50;
             listView_Patient.Columns[1].Width = 100;
             listView_Patient.Columns[2].Width = 200;
-            foreach (var row in r)
+            foreach (var row in r2)
             {
                 ListViewItem item = new ListViewItem();
                 item.Text = "" + i++;

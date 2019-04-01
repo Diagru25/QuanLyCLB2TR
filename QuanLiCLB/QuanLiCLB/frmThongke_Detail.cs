@@ -58,21 +58,25 @@ namespace QuanLiCLB
                         select new
                         {
                             Tenhs = hs.TenHS,
-                            TenCLB = clb.TenClb
+                            TenCLB = clb.TenClb,
+                            TenLopCLB = lh.TenLp
                         }).ToList();
             var i = 0;
             listView_Patient.Columns.Add("STT");
             listView_Patient.Columns.Add("Tên Học sinh");
             listView_Patient.Columns.Add("Tên Câu lạc bộ");
+            listView_Patient.Columns.Add("Lớp Câu lạc bộ");
             listView_Patient.Columns[0].Width = 50;
             listView_Patient.Columns[1].Width = 200;
             listView_Patient.Columns[2].Width = 200;
+            listView_Patient.Columns[3].Width = 200;
             foreach (var row in test)
             {
                 ListViewItem item = new ListViewItem();
                 item.Text = "" + i++;
                 item.SubItems.Add(row.Tenhs.ToString());
                 item.SubItems.Add(row.TenCLB.ToString());
+                item.SubItems.Add(row.TenLopCLB.ToString());
                 listView_Patient.Items.Add(item);
             }
         }
