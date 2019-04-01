@@ -34,6 +34,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txbID = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cboQuyen = new System.Windows.Forms.ComboBox();
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button2 = new System.Windows.Forms.Button();
             this.btnAddCLB = new System.Windows.Forms.Button();
@@ -45,15 +48,17 @@
             this.btnDelCLB = new System.Windows.Forms.Button();
             this.btnEditCLB = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cboQuyen = new System.Windows.Forms.ComboBox();
-            this.txbID = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.txbMatKhau = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pnlCreatPass = new System.Windows.Forms.Panel();
+            this.btnShowPass = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.pnlCreatPass.SuspendLayout();
             this.SuspendLayout();
             // 
             // columnHeader3
@@ -93,6 +98,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.pnlCreatPass);
             this.groupBox3.Controls.Add(this.txbID);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.cboQuyen);
@@ -104,6 +110,34 @@
             this.groupBox3.Size = new System.Drawing.Size(1084, 799);
             this.groupBox3.TabIndex = 56;
             this.groupBox3.TabStop = false;
+            // 
+            // txbID
+            // 
+            this.txbID.Enabled = false;
+            this.txbID.Location = new System.Drawing.Point(306, 94);
+            this.txbID.Name = "txbID";
+            this.txbID.Size = new System.Drawing.Size(571, 38);
+            this.txbID.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(64, 97);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 32);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "ID";
+            // 
+            // cboQuyen
+            // 
+            this.cboQuyen.FormattingEnabled = true;
+            this.cboQuyen.Items.AddRange(new object[] {
+            "Admin",
+            "User"});
+            this.cboQuyen.Location = new System.Drawing.Point(306, 390);
+            this.cboQuyen.Name = "cboQuyen";
+            this.cboQuyen.Size = new System.Drawing.Size(571, 39);
+            this.cboQuyen.TabIndex = 3;
             // 
             // columnHeader2
             // 
@@ -118,6 +152,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Làm mới";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnAddCLB
             // 
@@ -147,6 +182,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Tìm";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnExit
             // 
@@ -220,6 +256,10 @@
             this.listView1.View = System.Windows.Forms.View.Details;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Quyền";
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button2);
@@ -250,37 +290,43 @@
             this.groupBox2.TabIndex = 54;
             this.groupBox2.TabStop = false;
             // 
-            // cboQuyen
+            // txbMatKhau
             // 
-            this.cboQuyen.FormattingEnabled = true;
-            this.cboQuyen.Items.AddRange(new object[] {
-            "Admin",
-            "User"});
-            this.cboQuyen.Location = new System.Drawing.Point(306, 390);
-            this.cboQuyen.Name = "cboQuyen";
-            this.cboQuyen.Size = new System.Drawing.Size(571, 39);
-            this.cboQuyen.TabIndex = 3;
+            this.txbMatKhau.Location = new System.Drawing.Point(255, 46);
+            this.txbMatKhau.Name = "txbMatKhau";
+            this.txbMatKhau.Size = new System.Drawing.Size(571, 38);
+            this.txbMatKhau.TabIndex = 7;
+            this.txbMatKhau.UseSystemPasswordChar = true;
             // 
-            // txbID
+            // label4
             // 
-            this.txbID.Enabled = false;
-            this.txbID.Location = new System.Drawing.Point(306, 94);
-            this.txbID.Name = "txbID";
-            this.txbID.Size = new System.Drawing.Size(571, 38);
-            this.txbID.TabIndex = 5;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 49);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(184, 32);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Mật khẩu mới";
             // 
-            // label3
+            // pnlCreatPass
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 97);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 32);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "ID";
+            this.pnlCreatPass.Controls.Add(this.btnShowPass);
+            this.pnlCreatPass.Controls.Add(this.txbMatKhau);
+            this.pnlCreatPass.Controls.Add(this.label4);
+            this.pnlCreatPass.Location = new System.Drawing.Point(51, 475);
+            this.pnlCreatPass.Name = "pnlCreatPass";
+            this.pnlCreatPass.Size = new System.Drawing.Size(1018, 135);
+            this.pnlCreatPass.TabIndex = 8;
+            this.pnlCreatPass.Visible = false;
             // 
-            // columnHeader4
+            // btnShowPass
             // 
-            this.columnHeader4.Text = "Quyền";
+            this.btnShowPass.Location = new System.Drawing.Point(866, 32);
+            this.btnShowPass.Name = "btnShowPass";
+            this.btnShowPass.Size = new System.Drawing.Size(127, 65);
+            this.btnShowPass.TabIndex = 8;
+            this.btnShowPass.Text = "Hiện";
+            this.btnShowPass.UseVisualStyleBackColor = true;
+            this.btnShowPass.Click += new System.EventHandler(this.btnShowPass_Click);
             // 
             // frmTaiKhoan
             // 
@@ -300,6 +346,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.pnlCreatPass.ResumeLayout(false);
+            this.pnlCreatPass.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -329,5 +377,9 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Panel pnlCreatPass;
+        private System.Windows.Forms.Button btnShowPass;
+        private System.Windows.Forms.TextBox txbMatKhau;
+        private System.Windows.Forms.Label label4;
     }
 }

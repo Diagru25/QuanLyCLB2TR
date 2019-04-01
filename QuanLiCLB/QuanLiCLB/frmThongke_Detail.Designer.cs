@@ -39,10 +39,10 @@
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(597, 11);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Location = new System.Drawing.Point(1592, 26);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(119, 21);
+            this.comboBox1.Size = new System.Drawing.Size(311, 39);
             this.comboBox1.TabIndex = 12;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -54,9 +54,10 @@
             this.columnHeader3});
             this.listView_Patient.FullRowSelect = true;
             this.listView_Patient.GridLines = true;
-            this.listView_Patient.Location = new System.Drawing.Point(12, 12);
+            this.listView_Patient.Location = new System.Drawing.Point(32, 29);
+            this.listView_Patient.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.listView_Patient.Name = "listView_Patient";
-            this.listView_Patient.Size = new System.Drawing.Size(553, 371);
+            this.listView_Patient.Size = new System.Drawing.Size(1468, 879);
             this.listView_Patient.TabIndex = 13;
             this.listView_Patient.UseCompatibleStateImageBehavior = false;
             this.listView_Patient.View = System.Windows.Forms.View.Details;
@@ -75,13 +76,15 @@
             // 
             // frmThongke_Detail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 442);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1936, 962);
             this.Controls.Add(this.listView_Patient);
             this.Controls.Add(this.comboBox1);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "frmThongke_Detail";
-            this.Text = "frmThongke_Detail";
+            this.Text = "Thống kê theo lớp hành chính";
             this.ResumeLayout(false);
 
         }

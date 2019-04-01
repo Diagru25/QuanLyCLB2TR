@@ -42,9 +42,10 @@
             this.columnHeader3});
             this.listView_Patient.FullRowSelect = true;
             this.listView_Patient.GridLines = true;
-            this.listView_Patient.Location = new System.Drawing.Point(12, 12);
+            this.listView_Patient.Location = new System.Drawing.Point(32, 29);
+            this.listView_Patient.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.listView_Patient.Name = "listView_Patient";
-            this.listView_Patient.Size = new System.Drawing.Size(350, 298);
+            this.listView_Patient.Size = new System.Drawing.Size(1042, 764);
             this.listView_Patient.TabIndex = 9;
             this.listView_Patient.UseCompatibleStateImageBehavior = false;
             this.listView_Patient.View = System.Windows.Forms.View.Details;
@@ -63,12 +64,14 @@
             // 
             // frmThongke_CLB
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 359);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1121, 829);
             this.Controls.Add(this.listView_Patient);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "frmThongke_CLB";
-            this.Text = "frmThongke_CLB";
+            this.Text = "Thống kê";
             this.ResumeLayout(false);
 
         }

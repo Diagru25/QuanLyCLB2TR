@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -82,6 +83,8 @@ namespace QuanLiCLB
                     item.SubItems.Add((new LopHocController().DetailOne((long)row.LopID)).TenLp);
                     item.SubItems.Add((new HocSinhController().DetailOne((long)row.HocSinhID)).TenHS);
                     item.SubItems.Add(((Decimal)row.HocPhi).ToString("N0"));
+                    item.SubItems.Add(row.NguoiDangKy);
+                    item.SubItems.Add(Convert.ToDateTime(row.NgayDky).ToString("dd/MM/yyyy", CultureInfo.InvariantCulture));
                     listviewDK.Items.Add(item);
                 }
             }
@@ -181,6 +184,27 @@ namespace QuanLiCLB
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtFind.Text.Length > 0)
+            {
+                DangKiCLBController drc = new DangKiCLBController();
+                var li = drc.Find(txtFind.Text);
+                if (li.Count <= 0)
+                {
+                    MessageBox.Show("không tìm thấy");
+                    return;
+                }
+                ShowView(li);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DangKiCLBController drc = new DangKiCLBController();
+            ShowView(drc.Detail());
         }
     }
 }

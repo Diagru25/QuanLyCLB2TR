@@ -20,7 +20,7 @@ namespace QuanLiCLB
 
         public void btn_edit(bool t)
         {
-            //groupBox3.Enabled = t;
+            groupBox3.Enabled = t;
             btnAddCLB.Enabled = !t;
             btnEditCLB.Enabled = !t;
             btnDelCLB.Enabled = !t;
@@ -146,6 +146,27 @@ namespace QuanLiCLB
             int index = l.FindIndex(m => m.ID == i);
             txbID.Text = l[index].ID.ToString();
             txbTen.Text = l[index].Ten.ToString();
+        }
+        // tìm theo tên
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtFind.Text.Length > 0)
+            {
+                LopHcController drc = new LopHcController();
+                var li = drc.FindByName(txtFind.Text);
+                if (li.Count <= 0)
+                {
+                    MessageBox.Show("không tìm thấy");
+                    return;
+                }
+                ShowView(li);
+            }
+        }
+        // làm mới
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LopHcController lc = new LopHcController();
+            ShowView(lc.Detail());
         }
     }
 }

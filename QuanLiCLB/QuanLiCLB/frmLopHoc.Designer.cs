@@ -53,11 +53,12 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.txtFind = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.grpEditDrug.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -78,7 +79,7 @@
             this.grpEditDrug.Controls.Add(this.label3);
             this.grpEditDrug.Controls.Add(this.label1);
             this.grpEditDrug.Enabled = false;
-            this.grpEditDrug.Location = new System.Drawing.Point(1112, 122);
+            this.grpEditDrug.Location = new System.Drawing.Point(1335, 120);
             this.grpEditDrug.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.grpEditDrug.Name = "grpEditDrug";
             this.grpEditDrug.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
@@ -203,7 +204,7 @@
             this.groupBox2.Controls.Add(this.btnDelLopHoc);
             this.groupBox2.Controls.Add(this.btnEditLopHoc);
             this.groupBox2.Controls.Add(this.btnAddLopHoc);
-            this.groupBox2.Location = new System.Drawing.Point(1112, 1157);
+            this.groupBox2.Location = new System.Drawing.Point(1335, 1155);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
@@ -284,14 +285,15 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
-            this.columnHeader5});
+            this.columnHeader5,
+            this.columnHeader6});
             this.lvLopHoc.FullRowSelect = true;
             this.lvLopHoc.GridLines = true;
-            this.lvLopHoc.Location = new System.Drawing.Point(21, 0);
+            this.lvLopHoc.Location = new System.Drawing.Point(17, 4);
             this.lvLopHoc.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.lvLopHoc.MultiSelect = false;
             this.lvLopHoc.Name = "lvLopHoc";
-            this.lvLopHoc.Size = new System.Drawing.Size(1068, 1285);
+            this.lvLopHoc.Size = new System.Drawing.Size(1302, 1285);
             this.lvLopHoc.TabIndex = 0;
             this.lvLopHoc.UseCompatibleStateImageBehavior = false;
             this.lvLopHoc.View = System.Windows.Forms.View.Details;
@@ -305,24 +307,29 @@
             // columnHeader2
             // 
             this.columnHeader2.Text = "ID";
-            this.columnHeader2.Width = 80;
+            this.columnHeader2.Width = 50;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Tên lớp học";
-            this.columnHeader3.Width = 160;
+            this.columnHeader3.Width = 120;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Lịch học";
             this.columnHeader4.Width = 120;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Ngày bắt đầu";
+            this.columnHeader5.Width = 90;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.txtFind);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(1112, 0);
+            this.groupBox1.Location = new System.Drawing.Point(1335, -2);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
@@ -361,16 +368,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // columnHeader5
+            // columnHeader6
             // 
-            this.columnHeader5.Text = "Ngày bắt đầu";
+            this.columnHeader6.Text = "Ca học";
             // 
             // frmLopHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(2227, 1319);
+            this.ClientSize = new System.Drawing.Size(2436, 1319);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lvLopHoc);
             this.Controls.Add(this.groupBox2);
@@ -419,5 +426,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
     }
 }

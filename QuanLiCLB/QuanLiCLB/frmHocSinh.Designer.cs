@@ -56,6 +56,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.txtFind = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox2.SuspendLayout();
             this.groupDG.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -168,18 +169,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 552);
+            this.label2.Location = new System.Drawing.Point(48, 479);
             this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 32);
+            this.label2.Size = new System.Drawing.Size(210, 32);
             this.label2.TabIndex = 40;
-            this.label2.Text = "Lớp";
+            this.label2.Text = "Lớp hành chính";
             // 
             // cbbLopHocSinh
             // 
             this.cbbLopHocSinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbLopHocSinh.FormattingEnabled = true;
-            this.cbbLopHocSinh.Location = new System.Drawing.Point(280, 546);
+            this.cbbLopHocSinh.Location = new System.Drawing.Point(280, 473);
             this.cbbLopHocSinh.Margin = new System.Windows.Forms.Padding(8);
             this.cbbLopHocSinh.Name = "cbbLopHocSinh";
             this.cbbLopHocSinh.Size = new System.Drawing.Size(456, 39);
@@ -192,7 +193,7 @@
             this.cbbGenderHocSinh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cbbGenderHocSinh.Location = new System.Drawing.Point(280, 324);
+            this.cbbGenderHocSinh.Location = new System.Drawing.Point(280, 251);
             this.cbbGenderHocSinh.Margin = new System.Windows.Forms.Padding(8);
             this.cbbGenderHocSinh.Name = "cbbGenderHocSinh";
             this.cbbGenderHocSinh.Size = new System.Drawing.Size(260, 39);
@@ -201,7 +202,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(48, 331);
+            this.label12.Location = new System.Drawing.Point(48, 258);
             this.label12.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(121, 32);
@@ -210,7 +211,7 @@
             // 
             // txtTenHocSinh
             // 
-            this.txtTenHocSinh.Location = new System.Drawing.Point(280, 231);
+            this.txtTenHocSinh.Location = new System.Drawing.Point(280, 158);
             this.txtTenHocSinh.Margin = new System.Windows.Forms.Padding(8);
             this.txtTenHocSinh.Name = "txtTenHocSinh";
             this.txtTenHocSinh.Size = new System.Drawing.Size(456, 38);
@@ -219,7 +220,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(48, 238);
+            this.label11.Location = new System.Drawing.Point(48, 165);
             this.label11.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(98, 32);
@@ -230,7 +231,7 @@
             // 
             this.dtpDateHocSinh.CustomFormat = "      dd/MM/yyyy";
             this.dtpDateHocSinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDateHocSinh.Location = new System.Drawing.Point(280, 434);
+            this.dtpDateHocSinh.Location = new System.Drawing.Point(280, 361);
             this.dtpDateHocSinh.Margin = new System.Windows.Forms.Padding(8);
             this.dtpDateHocSinh.Name = "dtpDateHocSinh";
             this.dtpDateHocSinh.Size = new System.Drawing.Size(456, 38);
@@ -249,7 +250,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(48, 434);
+            this.label4.Location = new System.Drawing.Point(48, 361);
             this.label4.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 32);
@@ -273,7 +274,8 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader4,
-            this.columnHeader3});
+            this.columnHeader3,
+            this.columnHeader5});
             this.listView_HocSinh.FullRowSelect = true;
             this.listView_HocSinh.GridLines = true;
             this.listView_HocSinh.Location = new System.Drawing.Point(28, 8);
@@ -293,7 +295,7 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "ID";
-            this.columnHeader1.Width = 74;
+            this.columnHeader1.Width = 50;
             // 
             // columnHeader2
             // 
@@ -303,12 +305,11 @@
             // columnHeader4
             // 
             this.columnHeader4.Text = "Giới tính";
-            this.columnHeader4.Width = 110;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Ngày sinh";
-            this.columnHeader3.Width = 143;
+            this.columnHeader3.Width = 100;
             // 
             // groupBox1
             // 
@@ -354,6 +355,11 @@
             this.button1.Text = "Tìm";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Lớp hành chính";
+            this.columnHeader5.Width = 120;
             // 
             // frmHocSinh
             // 
@@ -409,5 +415,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbbLopHocSinh;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }

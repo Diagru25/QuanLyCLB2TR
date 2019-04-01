@@ -80,6 +80,10 @@ namespace QuanLiCLB.controller
                 return false;
             }
         }
+        public List<TaiKhoan> FindByName(string key)
+        {
+            return db.TaiKhoans.Where(x => x.TenTK.Contains(key)).ToList();
+        }
         public List<TaiKhoan> getListTK(string from, string to)
         {
             //var list = from ex in db.dispenseds
