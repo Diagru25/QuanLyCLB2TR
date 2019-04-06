@@ -52,9 +52,9 @@ namespace QuanLiCLB
         }
         void loadCbo()
         {
-            cboHS.DataSource = new HocSinhController().Detail();
-            cboHS.ValueMember = "ID";
-            cboHS.DisplayMember = "TenHS";
+            cboLopHC.DataSource = new LopHcController().Detail();
+            cboLopHC.ValueMember = "ID";
+            cboLopHC.DisplayMember = "Ten";
 
             cboLop.DataSource = new LopHocController().Detail();
             cboLop.ValueMember = "ID";
@@ -139,39 +139,53 @@ namespace QuanLiCLB
         {
             if (Add_bool == true && Edit_bool == false)
             {
-                var entity = new DangKy();
+                try
+                {
+                    var entity = new DangKy();
 
-                entity.HocSinhID = Convert.ToInt32(cboHS.SelectedValue);
-                entity.LopID = Convert.ToInt32(cboLop.SelectedValue);
-                entity.HocPhi = Convert.ToDecimal(txbHocPhi.Text);
-                entity.NgayDky = dtpNgayDK.Value;
-                entity.TaiKhoanID = ConstantCommon.ID;
-                entity.NguoiDangKy = txbNguoiDK.Text;
+                    entity.HocSinhID = Convert.ToInt32(cboHS.SelectedValue);
+                    entity.LopID = Convert.ToInt32(cboLop.SelectedValue);
+                    entity.HocPhi = Convert.ToDecimal(txbHocPhi.Text);
+                    entity.NgayDky = dtpNgayDK.Value;
+                    entity.TaiKhoanID = ConstantCommon.ID;
+                    entity.NguoiDangKy = txbNguoiDK.Text;
 
-                var clb = new DangKiCLBController();
-                long t = clb.Add(entity);
-                if (t > 0)
-                    ShowView(clb.Detail());
-                else
+                    var clb = new DangKiCLBController();
+                    long t = clb.Add(entity);
+                    if (t > 0)
+                        ShowView(clb.Detail());
+                    else
+                        MessageBox.Show("Thêm bản ghi không thành công");
+                }
+                catch
+                {
                     MessageBox.Show("Thêm bản ghi không thành công");
+                }
             }
             if (Add_bool == false && Edit_bool == true)
             {
-                var entity = new DangKy();
+                try
+                {
+                    var entity = new DangKy();
 
-                entity.ID = Convert.ToInt32(txbID.Text);
-                entity.HocSinhID = Convert.ToInt32(cboHS.SelectedValue);
-                entity.LopID = Convert.ToInt32(cboLop.SelectedValue);
-                entity.HocPhi = Convert.ToDecimal(txbHocPhi.Text);
-                entity.NgayDky = dtpNgayDK.Value;
-                entity.TaiKhoanID = ConstantCommon.ID;
-                entity.NguoiDangKy = txbNguoiDK.Text;
+                    entity.ID = Convert.ToInt32(txbID.Text);
+                    entity.HocSinhID = Convert.ToInt32(cboHS.SelectedValue);
+                    entity.LopID = Convert.ToInt32(cboLop.SelectedValue);
+                    entity.HocPhi = Convert.ToDecimal(txbHocPhi.Text);
+                    entity.NgayDky = dtpNgayDK.Value;
+                    entity.TaiKhoanID = ConstantCommon.ID;
+                    entity.NguoiDangKy = txbNguoiDK.Text;
 
-                var clb = new DangKiCLBController();
-                if (clb.Edit(entity))
-                    ShowView(clb.Detail());
-                else
+                    var clb = new DangKiCLBController();
+                    if (clb.Edit(entity))
+                        ShowView(clb.Detail());
+                    else
+                        MessageBox.Show("Sửa bản ghi không thành công");
+                }
+                catch
+                {
                     MessageBox.Show("Sửa bản ghi không thành công");
+                }
             }
             btn_edit(false);
         }
@@ -205,6 +219,34 @@ namespace QuanLiCLB
         {
             DangKiCLBController drc = new DangKiCLBController();
             ShowView(drc.Detail());
+        }
+
+        private void cboLopHC_SelectedValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                cboHS.DataSource = new HocSinhController().GetByLopHC((long)cboLopHC.SelectedValue);
+                cboHS.ValueMember = "ID";
+                cboHS.DisplayMember = "TenHS";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void cboLop_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                long ID = Convert.ToInt32(cboLop.SelectedValue);
+
+                txbHocPhi.Text = (new LopHocController().GetHocPhiByID(ID)).ToString("N0");
+            }
+            catch
+            {
+
+            }
         }
     }
 }

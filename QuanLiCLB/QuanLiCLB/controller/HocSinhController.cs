@@ -36,7 +36,11 @@ namespace QuanLiCLB.controller
                        }).OrderByDescending(x=>x.ID);
             return list.ToList();
         }
-
+        public List<HocSinh> GetByLopHC(long lophc)
+        {
+            var temp = db.HocSinhs.Where(x => x.Lophc == lophc);
+            return temp.ToList();
+        }
         public HocSinh DetailOne(long ID)
         {
             var dr = db.HocSinhs.Find(ID);

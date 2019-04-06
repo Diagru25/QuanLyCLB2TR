@@ -76,5 +76,11 @@ namespace QuanLiCLB.controller
             var list = db.LopHocs.Where(m => m.TenLp.Contains(key)).ToList();
             return list;
         }
+        public decimal GetHocPhiByID(long id)
+        {
+            long clbID = (long)db.LopHocs.Find(id).ClbID;
+            decimal hocphi = Convert.ToDecimal(db.Clbs.Find(clbID).MucHocPhi);
+            return hocphi;
+        }
     }
 }
