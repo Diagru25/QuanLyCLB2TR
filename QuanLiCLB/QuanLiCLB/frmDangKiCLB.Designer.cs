@@ -48,6 +48,8 @@
             this.btnEditCLB = new System.Windows.Forms.Button();
             this.btnAddCLB = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cboLopHC = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cboLop = new System.Windows.Forms.ComboBox();
             this.cboHS = new System.Windows.Forms.ComboBox();
@@ -61,8 +63,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cboLopHC = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -254,6 +254,27 @@
             this.groupBox3.TabIndex = 50;
             this.groupBox3.TabStop = false;
             // 
+            // cboLopHC
+            // 
+            this.cboLopHC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLopHC.FormattingEnabled = true;
+            this.cboLopHC.Location = new System.Drawing.Point(166, 30);
+            this.cboLopHC.Margin = new System.Windows.Forms.Padding(1);
+            this.cboLopHC.Name = "cboLopHC";
+            this.cboLopHC.Size = new System.Drawing.Size(193, 21);
+            this.cboLopHC.TabIndex = 27;
+            this.cboLopHC.SelectedValueChanged += new System.EventHandler(this.cboLopHC_SelectedValueChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(47, 31);
+            this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(83, 13);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "Lớp hành chính";
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.cboLop);
@@ -306,6 +327,7 @@
             // 
             // txbHocPhi
             // 
+            this.txbHocPhi.Enabled = false;
             this.txbHocPhi.Location = new System.Drawing.Point(162, 230);
             this.txbHocPhi.Margin = new System.Windows.Forms.Padding(1);
             this.txbHocPhi.Name = "txbHocPhi";
@@ -388,27 +410,6 @@
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "ID";
-            // 
-            // cboLopHC
-            // 
-            this.cboLopHC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboLopHC.FormattingEnabled = true;
-            this.cboLopHC.Location = new System.Drawing.Point(166, 30);
-            this.cboLopHC.Margin = new System.Windows.Forms.Padding(1);
-            this.cboLopHC.Name = "cboLopHC";
-            this.cboLopHC.Size = new System.Drawing.Size(193, 21);
-            this.cboLopHC.TabIndex = 27;
-            this.cboLopHC.SelectedValueChanged += new System.EventHandler(this.cboLopHC_SelectedValueChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(47, 31);
-            this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 13);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "Lớp hành chính";
             // 
             // frmDangKiCLB
             // 
